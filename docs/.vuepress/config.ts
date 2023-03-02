@@ -19,8 +19,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "serendipity0321's blog",
-      description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
+      title: "Lavender",
+      description: '专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -44,17 +44,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '学习笔记',
             items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
+              { text: 'JavaScript教程', link: '/note/javascript/' },
+              { text: 'JavaScript高级程序设计', link: '/note/js/' },
+              { text: 'ES6', link: '/note/es6/' },
+              { text: 'Vue', link: '/note/vue/' },
+              { text: 'React', link: '/note/react/' },
               {
-                text: '《TypeScript 从零实现 axios》',
+                text: 'TypeScript 从零实现 axios',
                 link: '/note/typescript-axios/',
               },
               {
-                text: '《Git》',
+                text: 'Git',
                 link: '/note/git/',
               },
               {
@@ -75,6 +75,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
           { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          { text: '面试', link: '/pages/0a83b083bdf257cb/' },
         ],
       },
       {
@@ -119,7 +120,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/logo.png', // 导航栏logo
+    logo: 'https://s2.loli.net/2022/10/08/k5M7H1NdmnZgtlY.png', // 导航栏logo
     repo: 'serendipity0321/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
@@ -137,12 +138,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
-    // bodyBgImg: [
-    //   'https://fastly.jsdelivr.net/gh/serendipity0321/image_store/blog/20200507175828.jpeg',
+    bodyBgImg: [
+      'https://s2.loli.net/2023/02/19/u9CT6IyGmXJnqBh.jpg',
     //   'https://fastly.jsdelivr.net/gh/serendipity0321/image_store/blog/20200507175845.jpeg',
     //   'https://fastly.jsdelivr.net/gh/serendipity0321/image_store/blog/20200507175846.jpeg'
-    // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
-    // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
+    ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
+    bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
@@ -173,9 +174,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://fastly.jsdelivr.net/gh/serendipity0321/image_store/blog/20200103123203.jpg',
-      name: 'serendipity0321 Xu',
-      slogan: '前端界的小学生',
+      avatar: 'https://s2.loli.net/2023/03/01/ObQE3TvFKInczfl.jpg',
+      name: 'serendipity',
+      slogan: '前端小白的学习笔记',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.serendipity0321.com/pages/a20ce8/#social)
@@ -185,7 +186,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'mailto:1727439300@qq.com',
         },
         {
           iconClass: 'icon-github',
@@ -195,7 +196,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-erji',
           title: '音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
+          link: 'https://music.163.com/#/playlist?id=5273538034',
         },
       ],
     },
@@ -210,7 +211,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'serendipity0321',
+        name: 'serendipity',
         link: 'https://github.com/serendipity0321'
       }
     },
