@@ -1,5 +1,5 @@
 /**
- * 提示：如您想使用JS版本的配置文件可参考：https://github.com/xugaoyi/vuepress-theme-vdoing/tree/a2f03e993dd2f2a3afdc57cf72adfc6f1b6b0c32/docs/.vuepress
+ * 提示：如您想使用JS版本的配置文件可参考：https://github.com/serendipity0321/vuepress-theme-vdoing/tree/a2f03e993dd2f2a3afdc57cf72adfc6f1b6b0c32/docs/.vuepress
  */
 import { resolve } from 'path'
 import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
@@ -8,7 +8,7 @@ import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-// const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
+// const DOMAIN_NAME = 'serendipity0321.com' // 域名 (不带https)
 // const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
@@ -31,12 +31,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '前端',
+        text: '基础',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: '前端文章',
+            text: '前端三件套',
             items: [
               { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
             ],
@@ -102,11 +102,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         text: '收藏',
         link: '/pages/beb6c0bd8a66cea6/',
-        // items: [
-        //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-        //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-        //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-        // ],
+        items: [
+          { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
+          { text: '资源', link: '/pages/eee83a9211a70f9d/' },
+          { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
+        ],
       },
       {
         text: '索引',
@@ -120,7 +120,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'serendipity0321/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -128,7 +128,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     editLinks: true, // 启用编辑
     editLinkText: '编辑',
 
-    //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
+    //*** 以下是Vdoing主题相关配置，文档：https://doc.serendipity0321.com/pages/a20ce8/ ***//
 
     // category: false, // 是否打开分类功能，默认true
     // tag: false, // 是否打开标签功能，默认true
@@ -138,9 +138,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
     // bodyBgImg: [
-    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
-    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
+    //   'https://fastly.jsdelivr.net/gh/serendipity0321/image_store/blog/20200507175828.jpeg',
+    //   'https://fastly.jsdelivr.net/gh/serendipity0321/image_store/blog/20200507175845.jpeg',
+    //   'https://fastly.jsdelivr.net/gh/serendipity0321/image_store/blog/20200507175846.jpeg'
     // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
     // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
@@ -167,34 +167,34 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: 'xugaoyi', // 必需
-      link: 'https://github.com/xugaoyi', // 可选的
+      name: 'serendipity0321', // 必需
+      link: 'https://github.com/serendipity0321', // 可选的
     },
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+      avatar: 'https://fastly.jsdelivr.net/gh/serendipity0321/image_store/blog/20200103123203.jpg',
       name: 'serendipity0321 Xu',
       slogan: '前端界的小学生',
     },
 
-    // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
+    // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.serendipity0321.com/pages/a20ce8/#social)
     social: {
       // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
       icons: [
         {
           iconClass: 'icon-youjian',
-          title: '发邮件',
+          title: '邮件',
           link: 'mailto:894072666@qq.com',
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi',
+          link: 'https://github.com/serendipity0321',
         },
         {
           iconClass: 'icon-erji',
-          title: '听音乐',
+          title: '音乐',
           link: 'https://music.163.com/#/playlist?id=755597173',
         },
       ],
@@ -202,16 +202,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 页脚信息
     footer: {
-      createYear: 2019, // 博客创建年份
+      createYear: 2023, // 博客创建年份
       copyrightInfo:
-        'serendipity0321 Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+        'serendipity  | <a href="https://github.com/serendipity0321" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'xugaoyi',
-        link: 'https://github.com/xugaoyi'
+        name: 'serendipity0321',
+        link: 'https://github.com/serendipity0321'
       }
     },
 
@@ -231,14 +231,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-    // [
-    //   'script',
-    //   {
-    //     'data-ad-client': 'ca-pub-7828333725993554',
-    //     async: 'async',
-    //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-    //   },
-    // ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
+    [
+      'script',
+      {
+        'data-ad-client': 'ca-pub-7828333725993554',
+        async: 'async',
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+      },
+    ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
   ],
 
 
@@ -285,10 +285,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             title: '在Bing中搜索',
             frontUrl: 'https://cn.bing.com/search?q=',
           },
-          // {
-          //   title: '通过百度搜索本站的',
-          //   frontUrl: `https://www.baidu.com/s?wd=site%3A${DOMAIN_NAME}%20`,
-          // },
         ],
       }
     ],
@@ -333,8 +329,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           clientID: 'a6e1355287947096b88b',
           clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
           repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
+          owner: 'serendipity0321', // GitHub仓库所有者
+          admin: ['serendipity0321'], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
